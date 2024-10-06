@@ -1,0 +1,100 @@
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Non-hateful", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Hate speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Not hateful", "gold_label": "non-hate"}
+{"output_text": "Unclear.", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Hate speech", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Non-hateful", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "hate"}
+{"output_text": "Hate speech", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech.", "gold_label": "non-hate"}
+{"output_text": "Hate speech", "gold_label": "hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Not provided", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech.", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech.", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "No hate speech detected.", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "No label can be assigned to the sentence \"I'm in LA\" as it does not contain any hate speech.", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Not enough information is provided to determine if the sentence contains hate speech. Please provide a more specific sentence or context.", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech.", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "The sentence provided does not contain any hate speech.", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate speech", "gold_label": "hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech.", "gold_label": "hate"}
+{"output_text": "Non-hate speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Hate Speech", "gold_label": "hate"}
+{"output_text": "Hate Speech", "gold_label": "hate"}
+{"output_text": "Not offensive", "gold_label": "non-hate"}
+{"output_text": "Hate speech", "gold_label": "hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "Not hate speech", "gold_label": "non-hate"}
+{"output_text": "Non-hateful speech", "gold_label": "non-hate"}
+{"output_text": "Non-Hate Speech", "gold_label": "non-hate"}
+{"output_text": "Neutral", "gold_label": "non-hate"}
+{"output_text": "Not Hate Speech", "gold_label": "non-hate"}
