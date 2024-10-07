@@ -8,27 +8,27 @@ from post_process import sst2, financial_pb, poem, wnli, super_glue_cb, glue_rte
 
 def main(task, model, exp, num_k):
     # if model in ["gpt3", "chatgpt"]:
-    #     file_path = os.path.join("exp2", exp, model, task, "s*.jsonl")
+    #     file_path = os.path.join("results", exp, model, task, "s*.jsonl")
     # else:
-    #     file_path = os.path.join("exp2", exp, model, task, "*_clean.jsonl")
+    #     file_path = os.path.join("results", exp, model, task, "*_clean.jsonl")
     if exp == 'num_k':
-        file_path = os.path.join('exp2', exp, model, num_k, task, "s*.jsonl")
+        file_path = os.path.join('results', exp, model, num_k, task, "s*.jsonl")
     else:
-        file_path = os.path.join("exp2", exp, model, task, "s*.jsonl")
+        file_path = os.path.join("results", exp, model, task, "s*.jsonl")
     files = sorted(glob(file_path))
     # print (files)
 
     for file_name in files:
         print ("=============================")
         print ("Seed:", file_name)
-        if model in ["mistral", "llama2"] and exp not in ["acc1", "acc3"]:
+        if model in ["mistral", "llama2"] and exp not in ["DI", "DI_ICL"]:
             if "clean" not in file_name:
                 continue
         if task == "glue_sst2":
             sst2.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral","llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s13_clean.jsonl"
@@ -55,8 +55,8 @@ def main(task, model, exp, num_k):
         elif task == "wnli":
             wnli.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s100_clean.jsonl"
@@ -76,8 +76,8 @@ def main(task, model, exp, num_k):
         elif task == "glue_rte":
             glue_rte.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s13_clean.jsonl"
@@ -90,8 +90,8 @@ def main(task, model, exp, num_k):
         elif task == "medical_questions_pairs":
             medical_question.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s100_clean.jsonl"
@@ -104,8 +104,8 @@ def main(task, model, exp, num_k):
         elif task == "glue_mrpc":
             mrpc.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s100_clean.jsonl"
@@ -118,8 +118,8 @@ def main(task, model, exp, num_k):
         elif task == "tweet_hate":
             tweet_hate.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s13_clean.jsonl"
@@ -132,8 +132,8 @@ def main(task, model, exp, num_k):
         elif task == "hs18":
             hs18.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s100_clean.jsonl"
@@ -146,8 +146,8 @@ def main(task, model, exp, num_k):
         elif task == "tweet_stance_feminist":
             tweet_feminist.eval(file_name, model, exp)
 
-            if exp in ["acc2", "flip"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "Incorrect_Label"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s13_clean.jsonl"
@@ -167,8 +167,8 @@ def main(task, model, exp, num_k):
         elif task == "ag_new":
             ag_news.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s100_clean.jsonl"
@@ -181,8 +181,8 @@ def main(task, model, exp, num_k):
         elif task == "trec_":
             trec.eval(file_name, model, exp)
 
-            if exp in ["acc2", "acc3", "flip", "retrieval", "reverse_rand", "reverse_retrieval"]:
-                with_out_ICL_file_name = os.path.join("exp2", "acc0", model, task)
+            if exp in ["ICL", "DI_ICL", "Incorrect_Label", "retrieval", "reverse_rand", "reverse_retrieval"]:
+                with_out_ICL_file_name = os.path.join("results", "zeroshot", model, task)
                 if model in ["mistral", "llama2"]:
                     if model == "mistral":
                         with_out_ICL_file_name += "/s13_clean.jsonl"
@@ -196,16 +196,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Apply perturbations to a sentence.")
     parser.add_argument("--task_name", type=str, default="glue_sst2", choices=['ag_new', 'bc2gm', 'conll03', 'financial_pb', 'glue_rte', 'glue_sst2', 'poem', 'super_glue_cb', 'trec_', 'tweet_hate', 'tweet_stance_atheism', 'tweet_stance_feminist', 'wnut17', 'wnli', 'medical_questions_pairs', 'glue_mrpc', 'hs18'])
     parser.add_argument("--model_name", type=str, default="chatgpt", choices=['mistral', 'flant5', 'gpt3', 'chatgpt', 'llama2'])
-    parser.add_argument("--exp_name", type=str, default="acc0", choices=['acc0', 'acc1', 'acc2', 'acc3', 'flip', 'retrieval','diverse', 'num_k', 'reverse_rand', 'reverse_retrieval'])
+    parser.add_argument("--exp_name", type=str, default="zeroshot", choices=['zeroshot', 'DI', 'ICL', 'DI_ICL', 'Incorrect_Label', 'retrieval','diverse', 'num_k', 'reverse_rand', 'reverse_retrieval'])
     parser.add_argument('--num_k', type=str, default='5')
 
     args = parser.parse_args()
 
-    if args.exp_name == "acc0":
+    if args.exp_name == "zeroshot":
         print ("Prompt: only gives the {INS_TASK}")
-    elif args.exp_name == "acc1":
+    elif args.exp_name == "DI":
         print("Prompt: only gives the {INS_TASK}{INS_FORMAT}")
-    elif args.exp_name in ["acc2", "flip"]:
+    elif args.exp_name in ["ICL", "Incorrect_Label"]:
         print("Prompt: only gives the {INS_TASK}{DEMO}")
     else:
         print("Prompt: gives the {INS_TASK}{INS_FORMAT}{DEMO}")
