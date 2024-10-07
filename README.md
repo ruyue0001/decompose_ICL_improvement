@@ -42,10 +42,12 @@ We do not own the datasets evaluated in our experiments. Please download them vi
 
 ## Citation
 ```
-@inproceedings{longdoes,
-  title={Does In-Context Learning Really Learn? Rethinking How Large Language Models Respond and Solve Tasks via In-Context Learning},
-  author={Long, Quanyu and Wu, Yin and Wang, Wenya and Pan, Sinno Jialin},
-  year={2024},
-  booktitle={First Conference on Language Modeling}
+@inproceedings{
+    long2024does,
+    title={Does In-Context Learning Really Learn? Rethinking How Large Language Models Respond and Solve Tasks via In-Context Learning},
+    author={Quanyu Long and Yin Wu and Wenya Wang and Sinno Jialin Pan},
+    booktitle={First Conference on Language Modeling},
+    year={2024},
+    url={https://openreview.net/forum?id=i2oJjC0ESQ}
 }
 ```
