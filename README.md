@@ -36,9 +36,11 @@ We do not own the datasets evaluated in our experiments. Please download them vi
 
 `scripts/prepare_datasets/generate_dataset.sh` is for this purpose. It downloads the datasets from huggingface and do some pre-processing, including sampling the samples used for in-context demonstrations.
 
-## Inference
+## Inference and Evaluation
 
-`section5`, `section6` and `section7` folders contain the bash files used for experiments in correspoding sections of our paper. Replace `accelerate launch --config_file "./acc_config_dist.yaml"` with `python` to perform single-gpu inference. You need to set the batch size accordingly.
+In scripts folder, `section5`, `section6` and `section7` folders contain the bash files used for experiments in correspoding sections of our paper. Replace `accelerate launch --config_file "./acc_config_dist.yaml"` with `python` to perform single-gpu inference. You need to set the batch size accordingly.
+
+The evaluation scripts will be runned after the inference finish, which is included in the corresponding bash files.
 
 ## Citation
 ```
