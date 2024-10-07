@@ -38,4 +38,14 @@ We do not own the datasets evaluated in our experiments. Please download them vi
 
 ## Inference
 
-`section5`, `section6` and `section7` folders contain the bash files used for experiments in correspoding sections of our paper. Replace `accelerate launch --config_file "./acc_config_dist.yaml"` with `python` to perform single-gpu inference. You need to set the batch size accordingly
+`section5`, `section6` and `section7` folders contain the bash files used for experiments in correspoding sections of our paper. Replace `accelerate launch --config_file "./acc_config_dist.yaml"` with `python` to perform single-gpu inference. You need to set the batch size accordingly.
+
+## Citation
+```
+@inproceedings{longdoes,
+  title={Does In-Context Learning Really Learn? Rethinking How Large Language Models Respond and Solve Tasks via In-Context Learning},
+  author={Long, Quanyu and Wu, Yin and Wang, Wenya and Pan, Sinno Jialin},
+  year={2024},
+  booktitle={First Conference on Language Modeling}
+}
+```
